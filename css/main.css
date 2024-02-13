@@ -1,0 +1,80 @@
+/* IMPORT GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+
+    --background-color: #E5E5E5;
+    --green-approved: #008f39;
+    --red-remove: #cc0000;
+    --neutral-black-color: #000000;
+    --color-blue-neutral: hsl(228, 45%, 44%);
+
+    --font-family-inter: "Inter", sans-serif;
+    --default-font-size: 16px;
+
+}
+
+body {
+    font-family: var(--font-family-inter);
+    background-color: var(--background-color);
+}
+
+html {
+    font-size: var(--default-font-size);
+}
+
+
+ion-icon {
+    font-size: 2rem;
+}
+
+.icons-remove ion-icon {
+    color: var(--red-remove);
+}
+
+ion-button {
+    cursor: pointer;
+}
+
+.isRead {
+    color: var(--green-approved);
+}
+
+td {
+    border-color: var(--neutral-black-color);
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 900;
+}
+
+.line {
+    background-color: var(--neutral-black-color);
+    height: 10px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.container-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+
+footer {
+    padding-top: 30px;
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--color-blue-neutral);
+    text-decoration: none;
+}

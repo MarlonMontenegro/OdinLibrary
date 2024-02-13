@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ====  CSS ====  -->
+    <link type="text/css" rel="stylesheet" href="css/normalize.css">
+    <link type="text/css" rel="stylesheet" href="css/skeleton.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+
+    <link rel="icon" href="img/img.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <title>Odin Library | Marlon Montenegro</title>
+
+</head>
+<body>
+<main>
+    <div class="container container-title">
+        <h1 class="title">Odin Library</h1>
+        <div class="line"></div>
+        <br>
+        <button class="button-primary btn button" id="btn-open-modal">Add a New Book</button>
+    </div>
+    <div class="container cards-container">
+        <div class="row">
+            <table class="u-full-width">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                </tr>
+                </thead>
+                <tbody id="bookList">
+                </tbody>
+            </table>
+        </div>
+
+        <dialog id="modal">
+            <form>
+                <div class="row">
+                    <div class="six columns">
+                        <label for="bookName">Book Name</label>
+                        <input class="u-full-width" type="text" placeholder="Harry Potter..." id="bookName">
+                    </div>
+                    <div class="six columns">
+                        <label for="bookCategory">Category</label>
+                        <select class="u-full-width" id="bookCategory">
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Science Fiction">Science Fiction</option>
+                            <option value="Classic">Classic</option>
+                            <option value="Mystery/Thriller">Mystery/Thriller</option>
+                            <option value="Historical Fiction">Historical Fiction</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <label for="author">Author</label>
+                        <input class="u-full-width" type="text" placeholder="Jules Verns..." id="author">
+                    </div>
+                    <div class="six columns">
+                        <label for="numberOfPages">Pages</label>
+                        <input class="u-full-width" type="number" placeholder="950" id="numberOfPages" min="0">
+                    </div>
+                </div>
+                <label>
+                    <input type="checkbox" id="isRead">
+                    <span class="label-body">Already read?...</span>
+                </label>
+                <input class="button-primary" type="submit" value="submit" id="closeModal">
+            </form>
+        </dialog>
+    </div>
+</main>
+<footer>
+    <p class="attribution">
+        Challenge by <a href="https://www.theodinproject.com/lessons/node-path-javascript-library#project-solution"
+                        target="_blank">Odin Project</a>.
+        Coded by <a href="https://github.com/MarlonMontenegro">Marlon Montenegro</a>.
+    </p>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
